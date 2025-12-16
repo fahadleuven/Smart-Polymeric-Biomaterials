@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>@view-transition { navigation: auto; }</style>
+  
+ </head>
+ <body>
+  <div class="page-wrapper"><!-- Scroll to Top Button -->
+   <div class="scroll-to-top" id="scrollToTop">
+    <svg width="24" height="24" viewbox="0 0 24 24" fill="none"><path d="M12 19V5M5 12L12 5L19 12" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+   </div>
+   
+   <video autoplay muted loop class="bg-video">
+    <source src="2.mp4" type="video/mp4">
+  </video>
+
+   <!-- Navigation -->
+   <nav class="nav-container">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+     <div class="flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+      <div class="w-20 h-20 bg-white rounded-lg flex items-center justify-center overflow-hidden">
+  <img src="images/logo/l9.jpg"
+       alt="Group Logo"
+       class="w-full h-full object-contain scale-150" />
+</div>
+
+
+       
+       <span id="nav-group-name" class="text-xl font-bold text-gray-800">Smart Polymeric Biomaterials </span>
+      </div>
+      <div class="flex space-x-6"><a href="index.html" class="nav-link text-purple-600">Home</a>
+
+<div class="dropdown dropdown-down">
+  <a class="nav-link text-gray-700 hover:text-purple-600">Research ▾</a>
+
+  <div class="dropdown-menu">
+    
+    <!-- Overview item with right submenu -->
+    <div class="dropdown dropdown-right">
+      <a class="dropdown-item nav-link text-gray-700 hover:text-purple-600">
+        Overview ▸
+      </a>
+
+      <div class="dropdown-menu">
+        <a href="html-pages/norelease.html" class="dropdown-item">
+          Electrospinning Polymers for Biomedical Applications
+        </a>
+        <a href="html-pages/Developing Stimuli.html" class="dropdown-item">
+          Developing Stimuli-Responsive (Nano) particles
+        </a>
+        <a href="html-pages/research-2.html" class="dropdown-item">
+          Research Area 2
+        </a>
+      </div>
+    </div>
+<a href="html-pages/lab.html"
+       class="dropdown-item nav-link text-gray-700 hover:text-purple-600">
+      Lab
+    </a>
+
+    <a href="html-pages/funding.html"
+       class="dropdown-item nav-link text-gray-700 hover:text-purple-600">
+      Funding
+    </a>
+
+  </div>
+</div>
+
+<div class="dropdown dropdown-down">
+  <a class="nav-link text-gray-700 hover:text-purple-600">People ▾</a>
+
+  <div class="dropdown-menu">
+
+       <a href="html-pages/team.html" class=" dropdown-item nav-link text-gray-700 hover:text-purple-600">Team</a>
+
+<a href="html-pages/collabrations.html" class="dropdown-item nav-link text-gray-700 hover:text-purple-600">Collaborations</a>
+
+  </div></div>
+ <a href="html-pages/publications.html" class="nav-link text-gray-700 hover:text-purple-600">Publications</a> <a href="html-pages/events.html" class="nav-link text-gray-700 hover:text-purple-600">Events</a> 
+ 
+ 
+ <a href="html-pages/joinUs.html" class="nav-link text-gray-700 hover:text-purple-600">Join Us</a><a href="html-pages/contact.html" class="nav-link text-gray-700 hover:text-purple-600">Contact</a>
+      </div>
+     </div>
+    </div>
+   </nav><!-- Home Page -->
+   <div id="home" class="content-section active">
+    <div class="max-w-7xl mx-auto px-6 py-16">
+     <div class="text-center mb-16">
+      <div class="flex justify-center mb-8">
+
+       <div class="logo-container">
+  <img src="images/logo/l9.jpg"
+       alt="Group Logo"
+       class="logo-img" />
+</div>
+
+      </div>
+      <h1 id="home-group-name" class="text-5xl font-bold text-white mb-4">Smart Polymeric Biomaterials</h1>
+      <p id="home-tagline" class="text-2xl text-purple-100">Pioneering Innovation in Science and Technology</p>
+     </div>
+
+     <!-- Slideshow Section (same size/location) -->
+<div class="bg-blur rounded-xl p-8 shadow-2xl mb-12">
+
+  <div class="slideshow-container relative" style="height: 500px; border-radius: 12px; overflow: hidden;">
+
+    <!-- Slides (CARD-2 style) -->
+    <div class="slide fade">
+      <img src="images/SEM.jpg" class="slider-img" />
+    </div>
+
+    <div class="slide fade">
+      <img src="images/figure2tensile.jpeg" class="slider-img" />
+    </div>
+
+    <div class="slide fade">
+      <img src="images/staff/arn.png" class="slider-img" />
+    </div>
+    <div class="slide fade">
+      <video autoplay muted loop >
+    <source src="2.mp4" type="video/mp4">
+  </video>
+    </div>
+
+    <!-- Prev/Next Buttons -->
+    <a class="slide-prev">&#10094;</a>
+    <a class="slide-next">&#10095;</a>
+
+    <!-- Indicators -->
+    <div class="indicators">
+      <span class="indicator"></span>
+      <span class="indicator"></span>
+      <span class="indicator"></span>
+      <span class="indicator"></span>
+    </div>
+
+  </div>
+
+</div>
+
+     
+     
+     <!-- Latest News Section -->
+     <div class="bg-white rounded-xl p-12 shadow-2xl">
+      <h2 class="text-4xl font-bold text-gray-800 mb-8">Latest News</h2>
+      <p class="text-xl text-gray-600 mb-8">Stay updated with our latest achievements and announcements.</p>
+      <div class="space-y-8">
+       <article class="border-b-2 border-gray-200 pb-8">
+        <div class="flex items-start space-x-4">
+         <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-purple-400 to-indigo-400 rounded-lg flex items-center justify-center"><span class="text-3xl">🏆</span>
+         </div>
+         <div class="flex-1">
+          <p class="text-sm text-purple-600 font-medium mb-2">February 20, 2024</p>
+          <h3 class="text-2xl font-semibold text-gray-800 mb-3">Team Receives Prestigious Research Award</h3>
+          <p class="text-gray-600">Our research group has been honored with the Excellence in Research Award for groundbreaking work in computational methods. The award recognizes our innovative approaches and significant contributions to the field.</p>
+         </div>
+        </div>
+       </article>
+       <article class="border-b-2 border-gray-200 pb-8">
+        <div class="flex items-start space-x-4">
+         <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-indigo-400 to-blue-400 rounded-lg flex items-center justify-center"><span class="text-3xl">📰</span>
+         </div>
+         <div class="flex-1">
+          <p class="text-sm text-indigo-600 font-medium mb-2">February 10, 2024</p>
+          <h3 class="text-2xl font-semibold text-gray-800 mb-3">New Paper Published in Nature</h3>
+          <p class="text-gray-600">Dr. Johnson and team published a landmark paper in Nature on novel machine learning applications. The study has already garnered significant attention from the scientific community.</p>
+         </div>
+        </div>
+       </article>
+       <article class="border-b-2 border-gray-200 pb-8">
+        <div class="flex items-start space-x-4">
+         <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-400 rounded-lg flex items-center justify-center"><span class="text-3xl">🎉</span>
+         </div>
+         <div class="flex-1">
+          <p class="text-sm text-purple-600 font-medium mb-2">January 25, 2024</p>
+          <h3 class="text-2xl font-semibold text-gray-800 mb-3">New Lab Facilities Opening</h3>
+          <p class="text-gray-600">We're excited to announce the opening of our new state-of-the-art research facility, featuring advanced computational resources and collaborative workspaces.</p>
+         </div>
+        </div>
+       </article>
+       <article class="pb-8">
+        <div class="flex items-start space-x-4">
+         <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-indigo-400 to-purple-400 rounded-lg flex items-center justify-center"><span class="text-3xl">🌟</span>
+         </div>
+         <div class="flex-1">
+          <p class="text-sm text-indigo-600 font-medium mb-2">January 10, 2024</p>
+          <h3 class="text-2xl font-semibold text-gray-800 mb-3">PhD Student Wins Best Presentation Award</h3>
+          <p class="text-gray-600">Congratulations to Maria Garcia for winning the Best Presentation Award at the International Research Conference. Her work on data science applications received outstanding recognition.</p>
+         </div>
+        </div>
+       </article>
+      </div>
+     </div>
+    </div>
+   </div>
+
+
+
+   
+   
+   
+   
+ 
+<script src="script.js"></script>
+</body>
+</html>
