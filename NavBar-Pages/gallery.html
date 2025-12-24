@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../style.css">
+  <style>@view-transition { navigation: auto; }</style>
+  
+</head>
+<body>
+  <div class="page-wrapper"><!-- Scroll to Top Button -->
+   <div class="scroll-to-top" id="scrollToTop">
+    <svg width="24" height="24" viewbox="0 0 24 24" fill="none"><path d="M12 19V5M5 12L12 5L19 12" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+   </div>
+   
+   <video autoplay muted loop class="bg-video">
+    <source src="../2.mp4" type="video/mp4">
+  </video>
+
+    <!-- Navigation -->
+   <nav class="nav-container">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+     <div class="flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+       <div class="w-20 h-20 bg-white rounded-lg flex items-center justify-center overflow-hidden">
+  <img src="../images/logo/l9.jpg"
+       alt="Group Logo"
+       class="w-full h-full object-contain scale-125" />
+</div>
+        <span id="nav-group-name" class="text-xl font-bold text-gray-800">Smart Polymeric Biomaterials</span>
+      </div>
+      <div class="flex space-x-6"><a href="../index.html" class="nav-link text-purple-600">Home</a>
+       <div class="dropdown"><a class="nav-link text-gray-700 hover:text-purple-600">Research ▾</a>
+        <div class="dropdown-menu">
+        <a href="Electrospinning.html" class="dropdown-item">
+          Electrospinning Polymers for Biomedical Applications
+         </a>
+          <a href="Developing-Stimuli.html" class="dropdown-item">Developing-Stimuli-Responsive (Nano) particles</a>
+         <a href="research-2.html" class="dropdown-item">Research Area 2</a>
+
+        </div>
+       </div><a href="team.html" class="nav-link text-gray-700 hover:text-purple-600">Team</a> <a href="funding.html" class="nav-link text-gray-700 hover:text-purple-600">Funding</a>
+ <a href="events.html" class="nav-link text-gray-700 hover:text-purple-600">Events</a><a href="collabrations.html" class="nav-link text-gray-700 hover:text-purple-600">Collabrations</a> 
+ <a href="gallery.html" class="nav-link text-gray-700 hover:text-purple-600">Gallery</a> <a href="contact.html" class="nav-link text-gray-700 hover:text-purple-600">Contact</a>
+      </div>
+     </div>
+    </div>
+   </nav>
+
+   <!-- Gallery Page -->
+   
+    <div class="max-w-7xl mx-auto px-6 py-16">
+     <div class="text-center mb-12">
+      <h1 class="text-4xl font-bold text-white mb-4">Research Gallery</h1>
+      <p class="text-xl text-purple-100">Explore our lab facilities, events, and research highlights</p>
+     </div>
+     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+       <div class="w-full h-64 bg-gradient-to-br from-purple-400 to-indigo-500 flex items-center justify-center"><span class="text-7xl">🔬</span>
+       </div>
+       <div class="p-6">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Main Laboratory</h3>
+        <p class="text-gray-600">Our state-of-the-art research facility with advanced equipment</p>
+       </div>
+      </div>
+      <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+       <div class="w-full h-64 bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center"><span class="text-7xl">👥</span>
+       </div>
+       <div class="p-6">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Team Meeting</h3>
+        <p class="text-gray-600">Weekly research discussions and collaborative sessions</p>
+       </div>
+      </div>
+      <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+       <div class="w-full h-64 bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center"><span class="text-7xl">📊</span>
+       </div>
+       <div class="p-6">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Conference Presentation</h3>
+        <p class="text-gray-600">Presenting our findings at international conferences</p>
+       </div>
+      </div>
+      <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+       <div class="w-full h-64 bg-gradient-to-br from-indigo-500 to-blue-500 flex items-center justify-center"><span class="text-7xl">🧪</span>
+       </div>
+       <div class="p-6">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Experimental Setup</h3>
+        <p class="text-gray-600">Innovative experimental designs and methodologies</p>
+       </div>
+      </div>
+      <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+       <div class="w-full h-64 bg-gradient-to-br from-purple-400 to-indigo-400 flex items-center justify-center"><span class="text-7xl">🎓</span>
+       </div>
+       <div class="p-6">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Student Training</h3>
+        <p class="text-gray-600">Hands-on training and mentorship programs</p>
+       </div>
+      </div>
+      <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+       <div class="w-full h-64 bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center"><span class="text-7xl">🏆</span>
+       </div>
+       <div class="p-6">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Award Ceremony</h3>
+        <p class="text-gray-600">Celebrating achievements and milestones</p>
+       </div>
+      </div>
+      <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+       <div class="w-full h-64 bg-gradient-to-br from-purple-500 to-pink-400 flex items-center justify-center"><span class="text-7xl">💻</span>
+       </div>
+       <div class="p-6">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Computational Lab</h3>
+        <p class="text-gray-600">High-performance computing and data analysis</p>
+       </div>
+      </div>
+      <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+       <div class="w-full h-64 bg-gradient-to-br from-indigo-400 to-blue-400 flex items-center justify-center"><span class="text-7xl">🌍</span>
+       </div>
+       <div class="p-6">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">International Collaboration</h3>
+        <p class="text-gray-600">Working with research partners worldwide</p>
+       </div>
+      </div>
+      <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+       <div class="w-full h-64 bg-gradient-to-br from-purple-400 to-indigo-500 flex items-center justify-center"><span class="text-7xl">📚</span>
+       </div>
+       <div class="p-6">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Research Library</h3>
+        <p class="text-gray-600">Extensive collection of scientific literature</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+
+   <script src="../script.js"></script>
+
+   </body>
+</html>

@@ -53,9 +53,11 @@
 
 /* Mobile */
 @media (max-width: 768px) {
+   
   .nav-container .flex.items-center.justify-between {
     flex-direction: column;
     gap: 16px;
+     overflow:hidden;
   }
 
   .nav-container .flex.space-x-6 {
@@ -66,6 +68,8 @@
   .dropdown-menu {
     position: static; /* fix dropdown issues on mobile */
   }
+  
+ 
 }
 .nav-container .flex.items-center.justify-between {
   gap: 40px;
@@ -140,6 +144,7 @@
   transform: translateX(0);
 }
 
+
 /* =========================
    DROPDOWN ITEMS
    ========================= */
@@ -156,6 +161,7 @@
   color: purple;
   background: rgba(128, 0, 128, 0.05);
 }
+
 
 
 

@@ -215,29 +215,47 @@ document.addEventListener("DOMContentLoaded", () => {
       link.classList.add("text-gray-700");
     }
   });
+  });
 
   // ---------------------------
   // Contact form handling
   // ---------------------------
-  const contactForm = document.getElementById('contact-form');
-  const formMessage = document.getElementById('form-message');
+  document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contact-form");
+  const messageBox = document.getElementById("form-message");
 
-  if (contactForm && formMessage) {
-    contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
 
-      formMessage.textContent = 'Thank you for your message! We will get back to you soon.';
-      formMessage.className = 'mt-4 p-4 rounded-lg bg-green-100 text-green-800';
-      formMessage.classList.remove('hidden');
+    const formData = new FormData(form);
 
-      contactForm.reset();
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: { Accept: "application/json" }
+      });
 
-      setTimeout(() => {
-        formMessage.classList.add('hidden');
-      }, 5000);
-    });
-  }
+      if (response.ok) {
+        messageBox.textContent =
+          "Thank you! Your message has been sent.";
+        messageBox.className =
+          "mt-4 p-4 rounded-lg bg-green-100 text-green-800";
+        form.reset();
+      } else {
+        throw new Error("Submission failed");
+      }
+    } catch (err) {
+      messageBox.textContent =
+        "Oops! Something went wrong. Please try again.";
+      messageBox.className =
+        "mt-4 p-4 rounded-lg bg-red-100 text-red-800";
+    }
+
+    messageBox.classList.remove("hidden");
+  });
 });
+
 
 
  // Scroll to Top functionality
@@ -421,7 +439,7 @@ btn.addEventListener('click', () => {
 video.onended = () => {
   videoContainer.classList.add('hidden');
 };
-
+// Toggle video visibility
 */
 document.addEventListener('DOMContentLoaded', () => {
   const btn = document.getElementById('showVideoBtn');
@@ -447,3 +465,21 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
+
+
+ //Mobile menu toggle 
+
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+
+  document.querySelectorAll(".toggle-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const next = btn.nextElementSibling;
+      if (next) next.classList.toggle("hidden");
+    });
+  });
