@@ -22,76 +22,160 @@
   </video>
 
      <!-- Navigation -->
-   <nav class="nav-container">
-    <div class="max-w-7xl mx-auto px-6 py-4">
-     <div class="flex items-center justify-between">
+   <nav class="nav-container bg-white shadow">
+  <div class="max-w-7xl mx-auto px-6 py-4">
+    <div class="flex items-center justify-between">
+
+      <!-- Logo + Group Name -->
       <div class="flex items-center space-x-3">
-      <div class="w-20 h-20 bg-white rounded-lg flex items-center justify-center overflow-hidden">
-  <img src="../images/logo/l9.jpg"
-       alt="Group Logo"
-       class="w-full h-full object-contain scale-150" />
-</div>
-
-
-       
-       <span id="nav-group-name" class="text-xl font-bold text-gray-800">Smart Polymeric Biomaterials </span>
+        <div class="w-20 h-20 bg-white rounded-lg flex items-center justify-center overflow-hidden">
+          <img src="../images/logo/l9.jpg"
+               alt="Group Logo"
+               class="w-full h-full object-contain scale-150" />
+        </div>
+        <span id="nav-group-name" class="text-xl font-bold text-gray-800">
+          Smart Polymeric Biomaterials
+        </span>
       </div>
-      <div class="flex space-x-6"><a href="../index.html" class="nav-link text-purple-600">Home</a>
 
-<div class="dropdown dropdown-down">
-  <a class="nav-link text-gray-700 hover:text-purple-600">Research ▾</a>
+      <!-- Desktop Menu -->
+      <div id="desktop-menu" class="hidden md:flex space-x-6 items-center">
 
-  <div class="dropdown-menu">
-    
-    <!-- Overview item with right submenu -->
-    <div class="dropdown dropdown-right">
-      <a class="dropdown-item nav-link text-gray-700 hover:text-purple-600">
+        <a href="../index.html" class="nav-link text-purple-600">Home</a>
+
+        <!-- Research -->
+        <div class="dropdown dropdown-down">
+          <a class="nav-link text-gray-700 hover:text-purple-600">
+            Research ▾
+          </a>
+
+          <div class="dropdown-menu">
+
+            <!-- Overview -->
+            <div class="dropdown dropdown-right">
+              <a class="dropdown-item nav-link text-gray-700 hover:text-purple-600">
+                Overview ▸
+              </a>
+
+              <div class="dropdown-menu">
+                <a href="Electrospinning.html" class="dropdown-item">
+                  Electrospinning Polymers for Biomedical Applications
+                </a>
+                <a href="Developing-Stimuli.html" class="dropdown-item">
+                  Developing Stimuli-Responsive (Nano) particles
+                </a>
+                <a href="research-2.html" class="dropdown-item">
+                  Research Area 2
+                </a>
+              </div>
+            </div>
+
+            <a href="lab.html"
+               class="dropdown-item nav-link text-gray-700 hover:text-purple-600">
+              Lab
+            </a>
+
+            <a href="funding.html"
+               class="dropdown-item nav-link text-gray-700 hover:text-purple-600">
+              Funding
+            </a>
+
+          </div>
+        </div>
+
+        <!-- People -->
+        <div class="dropdown dropdown-down">
+          <a class="nav-link text-gray-700 hover:text-purple-600">
+            People ▾
+          </a>
+
+          <div class="dropdown-menu">
+            <a href="team.html"
+               class="dropdown-item nav-link text-gray-700 hover:text-purple-600">
+              Team
+            </a>
+
+            <a href="collabrations.html"
+               class="dropdown-item nav-link text-gray-700 hover:text-purple-600">
+              Collaborations
+            </a>
+          </div>
+        </div>
+
+        <a href="publications.html" class="nav-link text-gray-700 hover:text-purple-600">
+          Publications
+        </a>
+
+        <a href="events.html" class="nav-link text-gray-700 hover:text-purple-600">
+          Events
+        </a>
+
+        <a href="joinUs.html" class="nav-link text-gray-700 hover:text-purple-600">
+          Join Us
+        </a>
+
+        <a href="contact.html" class="nav-link text-gray-700 hover:text-purple-600">
+          Contact
+        </a>
+
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <button id="menu-btn" class="md:hidden text-gray-800 focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden hidden px-6 pb-4 bg-white">
+
+    <a href="../index.html" class="block py-2 text-purple-600">Home</a>
+
+    <!-- Mobile Research -->
+    <button class="toggle-btn w-full text-left py-2 text-gray-700 hover:text-purple-600">
+      Research ▾
+    </button>
+    <div class="hidden pl-4">
+      <button class="toggle-btn w-full text-left py-2 text-gray-700 hover:text-purple-600">
         Overview ▸
-      </a>
-
-      <div class="dropdown-menu">
-        <a href="Electrospinning.html" class="dropdown-item">
+      </button>
+      <div class="hidden pl-4">
+        <a href="Electrospinning.html" class="block py-1">
           Electrospinning Polymers for Biomedical Applications
         </a>
-        <a href="Developing-Stimuli.html" class="dropdown-item">
+        <a href="Developing-Stimuli.html" class="block py-1">
           Developing Stimuli-Responsive (Nano) particles
         </a>
-        <a href="research-2.html" class="dropdown-item">
+        <a href="research-2.html" class="block py-1">
           Research Area 2
         </a>
       </div>
+      <a href="lab.html" class="block py-1">Lab</a>
+      <a href="funding.html" class="block py-1">Funding</a>
     </div>
-<a href="lab.html"
-       class="dropdown-item nav-link text-gray-700 hover:text-purple-600">
-      Lab
-    </a>
 
-    <a href="funding.html"
-       class="dropdown-item nav-link text-gray-700 hover:text-purple-600">
-      Funding
-    </a>
+    <!-- Mobile People -->
+    <button class="toggle-btn w-full text-left py-2 text-gray-700 hover:text-purple-600">
+      People ▾
+    </button>
+    <div class="hidden pl-4">
+      <a href="team.html" class="block py-1">Team</a>
+      <a href="collabrations.html" class="block py-1">Collaborations</a>
+    </div>
 
+    <a href="publications.html" class="block py-2">Publications</a>
+    <a href="events.html" class="block py-2">Events</a>
+    <a href="joinUs.html" class="block py-2">Join Us</a>
+    <a href="contact.html" class="block py-2">Contact</a>
   </div>
-</div>
+</nav>
 
-<div class="dropdown dropdown-down">
-  <a class="nav-link text-gray-700 hover:text-purple-600">People ▾</a>
-
-  <div class="dropdown-menu">
-
-       <a href="team.html" class=" dropdown-item nav-link text-gray-700 hover:text-purple-600">Team</a>
-
-<a href="collabrations.html" class="dropdown-item nav-link text-gray-700 hover:text-purple-600">Collaborations</a>
-
-  </div></div>
- <a href="publications.html" class="nav-link text-gray-700 hover:text-purple-600">Publications</a> <a href="events.html" class="nav-link text-gray-700 hover:text-purple-600">Events</a> 
-
-
- <a href="joinUs.html" class="nav-link text-gray-700 hover:text-purple-600">Join Us</a><a href="contact.html" class="nav-link text-gray-700 hover:text-purple-600">Contact</a>
-      </div>
-     </div>
-    </div>
-   </nav>
 
    <!-- Contact Page -->
    

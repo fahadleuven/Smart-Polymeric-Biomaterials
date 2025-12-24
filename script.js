@@ -376,6 +376,57 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 //duble click to open modal
+
+
+
+document.querySelectorAll(".slider-img").forEach(img => {
+  img.addEventListener("dblclick", async function () {
+
+    // Container
+    const container = document.createElement("div");
+    container.className = "fullscreen-container";
+
+    // Image
+    const fullImg = document.createElement("img");
+    fullImg.src = this.src;
+    fullImg.className = "fullscreen-img";
+
+    // Close button
+    const closeBtn = document.createElement("button");
+    closeBtn.className = "fullscreen-close";
+    closeBtn.innerHTML = "&times;";
+
+    container.appendChild(fullImg);
+    container.appendChild(closeBtn);
+    document.body.appendChild(container);
+
+    // Request fullscreen on container (IMPORTANT)
+    setTimeout(() => {
+      if (container.requestFullscreen) {
+        container.requestFullscreen();
+      } else if (container.webkitRequestFullscreen) {
+        container.webkitRequestFullscreen();
+      }
+    }, 50);
+
+    // Close action
+    closeBtn.addEventListener("click", () => {
+      document.exitFullscreen();
+    });
+
+    // Cleanup
+    function exitHandler() {
+      if (!document.fullscreenElement) {
+        container.remove();
+        document.removeEventListener("fullscreenchange", exitHandler);
+      }
+    }
+
+    document.addEventListener("fullscreenchange", exitHandler);
+  });
+});
+
+/*
 document.querySelectorAll(".slider-img").forEach(img => {
   img.addEventListener("dblclick", async function() {
     // Create image element
@@ -414,7 +465,7 @@ document.querySelectorAll(".slider-img").forEach(img => {
   });
 });
 
-
+*/
 /*
 
 // Toggle video visibility
