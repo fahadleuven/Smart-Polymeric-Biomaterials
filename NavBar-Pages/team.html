@@ -268,8 +268,8 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         
 
-        <div class="team-card cursor-pointer"
-     onclick="window.location.href='../Person-pages/thibault.html'">
+        <a href="../Person-pages/thibault.html"
+   class="block team-card cursor-pointer no-underline">
 
   <div class="w-full h-64 bg-gray-300 rounded-xl overflow-hidden flex items-center justify-center">
     <img src="../images/staff/Thibault Vervenne.jpeg"
@@ -285,13 +285,13 @@
 
     <p class="text-white drop-shadow-md-600 mb-2">PhD Student</p>
 
-    <a href="mailto:thibault.vervenne@kuleuven.be"
-       class="text-white hover:text-indigo-800 text-sm"
-       onclick="event.stopPropagation()">
+    <!-- EMAIL AS BUTTON-LIKE LINK -->
+    <span class="text-white hover:text-indigo-800 text-sm underline">
       thibault.vervenne@kuleuven.be
-    </a>
+    </span>
   </div>
-</div>
+</a>
+
 
       
        <div class="team-card" cursor-pointer"
