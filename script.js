@@ -534,3 +534,98 @@ document.addEventListener('DOMContentLoaded', () => {
       if (next) next.classList.toggle("hidden");
     });
   });
+
+
+//News Section Toggle and Rendering 
+
+
+  const newsData = [
+    {
+      title: "Breakthrough in Quantum Computing Achieved",
+      date: "March 15, 2024",
+      category: "Quantum Physics",
+      summary: "Quantum entanglement at room temperature achieved.",
+      author: "Dr. ......."
+    },
+    {
+      title: "Novel Cancer Treatment Shows Promise",
+      date: "March 10, 2024",
+      category: "Medical Research",
+      summary: "New immunotherapy boosts survival rates by 40%.",
+      author: "Prof. ......"
+    },
+    {
+      title: "AI Model Predicts Climate Patterns with 95% Accuracy",
+      date: "March 5, 2024",
+      category: "Environmental Science",
+      summary: "AI forecasts climate patterns months ahead.",
+      author: "Dr. ....."
+    },
+    {
+      title: "Sustainable Energy Storage Solution Developed",
+      date: "February 28, 2024",
+      category: "Materials Science",
+      summary: "Organic batteries outperform lithium-ion.",
+      author: "Dr. ......"
+    },
+    {
+      title: "Neural Interface Technology Advances",
+      date: "February 20, 2024",
+      category: "Neuroscience",
+      summary: "Paralyzed patients control robotic limbs.",
+      author: "Prof. ........"
+    }
+  ];
+
+  let isExpanded = false;
+
+  function createNewsCard(news) {
+    const card = document.createElement("article");
+    card.className = "news-card bg-white rounded-xl p-12 shadow-2xl";
+    card.innerHTML = `
+      <div class="flex justify-between mb-3">
+        <span class="px-3 py-1 bg-emerald-500/20 text-emerald-400 rounded-full">${news.category}</span>
+        <time class="text-purple-600 font-medium mb-3">${news.date}</time>
+      </div>
+      <h2 class="text-4xl font-bold text-gray-800 mb-8">${news.title}</h2>
+      <p class="text-gray-600">${news.summary}</p>
+      <p class="text-purple-600 font-medium mb-3">${news.author}</p>
+    `;
+    return card;
+  }
+
+  function renderNews() {
+    const mainNews = document.getElementById("mainNews");
+    const moreNews = document.getElementById("moreNews");
+
+    mainNews.innerHTML = "";
+    moreNews.innerHTML = "";
+
+    // First 3 news
+    newsData.slice(0, 3).forEach(news => {
+      mainNews.appendChild(createNewsCard(news));
+    });
+
+    // Remaining news
+    newsData.slice(3).forEach(news => {
+      moreNews.appendChild(createNewsCard(news));
+    });
+  }
+
+  document.getElementById("toggleButton").addEventListener("click", () => {
+    const moreNews = document.getElementById("moreNews");
+
+    isExpanded = !isExpanded;
+    moreNews.classList.toggle("expanded", isExpanded);
+
+    document.getElementById("toggleButton").textContent =
+      isExpanded ? "Show Less" : "Read More News";
+  });
+
+  renderNews();
+
+
+
+
+
+    
