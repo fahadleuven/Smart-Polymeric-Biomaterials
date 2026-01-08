@@ -207,9 +207,14 @@ document.addEventListener("DOMContentLoaded", () => {
     // Only take the filename for comparison, ignore folders
     const linkPage = linkHref.split("/").pop();
 
-    if (linkPage === currentPage) {
+    if (linkPage === currentPage ) {
       link.classList.add("text-purple-600", "font-bold");
       link.classList.remove("text-gray-700");
+
+
+      
+      
+      
     } else {
       link.classList.remove("text-purple-600", "font-bold");
       link.classList.add("text-gray-700");
@@ -534,6 +539,35 @@ document.addEventListener('DOMContentLoaded', () => {
       if (next) next.classList.toggle("hidden");
     });
   });
+
+
+
+  const overviewBtn = document.getElementById("overview-btn");
+const overviewMenu = document.getElementById("overview-menu");
+let clickTimer = null;
+
+overviewBtn.addEventListener("click", (e) => {
+  // Start a timer to detect double click
+  if (clickTimer == null) {
+    clickTimer = setTimeout(() => {
+      // Single click: toggle submenu
+      overviewMenu.classList.toggle("hidden");
+      clickTimer = null;
+    }, 2000); // 250ms delay for double-click
+  } 
+});
+
+overviewBtn.addEventListener("dblclick", () => {
+  // Double click: go to the Overview page
+ 
+  clearTimeout(clickTimer);
+  clickTimer = null;
+  // ✅ path-safe navigation
+  const target = overviewBtn.dataset.href;
+  if (target) {
+    window.location.href = target;
+  }
+});
 
 
 //News Section Toggle and Rendering 

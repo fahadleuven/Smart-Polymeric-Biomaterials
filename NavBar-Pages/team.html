@@ -53,7 +53,7 @@
 
             <!-- Overview -->
             <div class="dropdown dropdown-right">
-              <a class="dropdown-item nav-link text-gray-700 hover:text-purple-600">
+              <a href="overview.html" class="dropdown-item nav-link text-gray-700 hover:text-purple-600">
                 Overview ▸
               </a>
 
@@ -142,10 +142,10 @@
       Research ▾
     </button>
     <div class="hidden pl-4">
-      <button class="toggle-btn w-full text-left py-2 text-gray-700 hover:text-purple-600">
+     <button data-href="overview.html" class="toggle-btn w-full text-left py-2 text-gray-700 hover:text-purple-600" id="overview-btn">
         Overview ▸
       </button>
-      <div class="hidden pl-4">
+      <div class="hidden pl-4" id="overview-menu">
         <a href="Electrospinning.html" class="block py-1">
           Electrospinning Polymers for Biomedical Applications
         </a>
@@ -202,20 +202,8 @@
        
        
       </div>
-     </div><!-- Administrative Coordinator Section -->
-     <div class="mb-16">
-      <h2 class="text-3xl font-bold text-white mb-8">Administrative Coordinator</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-       <div class="team-card">
-        <div class="w-full h-64 bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center"><span class="text-7xl">👩‍💼</span>
-        </div>
-        <div class="p-6">
-         <h3 class="text-xl font-semibold text-gray-800 mb-2">Jane Smith</h3>
-         <p class="text-purple-600 font-medium mb-2">Administrative Coordinator</p><a href="mailto:admin@example.com" class="text-indigo-600 hover:text-indigo-800 text-sm">admin@example.com</a>
-        </div>
-       </div>
-      </div>
-     </div><!-- PostDocs Section -->
+     </div>
+     <!-- PostDocs Section -->
      <div class="mb-16">
       <h2 class="text-3xl font-bold text-white mb-8">PostDocs</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -257,7 +245,7 @@
         <div class="w-full h-64 bg-gradient-to-br from-purple-500 to-indigo-500 flex items-center justify-center"><span class="text-7xl">👩‍🔬</span>
         </div>
         <div class="p-6">
-         <h3 class="text-xl font-semibold text-gray-800 mb-2">Hannah Agten</h3>
+         <h3 class="text-xl font-semibold text-gray-800 mb-2">......</h3>
          <p class="text-purple-600 font-medium mb-2">Postdoctoral Researcher</p>
         </div>
        </div>
@@ -385,7 +373,7 @@
         <div class="w-full h-64 bg-gradient-to-br from-purple-500 to-pink-400 flex items-center justify-center"><span class="text-7xl">👨‍🎓</span>
         </div>
         <div class="p-6">
-         <h3 class="text-xl font-semibold text-gray-800 mb-2">Athanasios Alexandridis</h3>
+         <h3 class="text-xl font-semibold text-gray-800 mb-2">..........</h3>
          <p class="text-purple-600 font-medium mb-2">PhD Student</p>
         </div>
        </div>
@@ -393,7 +381,7 @@
         <div class="w-full h-64 bg-gradient-to-br from-indigo-500 to-purple-400 flex items-center justify-center"><span class="text-7xl">👩‍🎓</span>
         </div>
         <div class="p-6">
-         <h3 class="text-xl font-semibold text-gray-800 mb-2">Britt De Munter</h3>
+         <h3 class="text-xl font-semibold text-gray-800 mb-2">.........</h3>
          <p class="text-purple-600 font-medium mb-2">PhD Student</p>
         </div>
        </div>
@@ -406,33 +394,21 @@
         <div class="w-full h-64 bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center"><span class="text-7xl">👩‍🔬</span>
         </div>
         <div class="p-6">
-         <h3 class="text-xl font-semibold text-gray-800 mb-2">Dr. Emily Rodriguez</h3>
-         <p class="text-purple-600 font-medium mb-2">Senior Researcher</p><a href="mailto:emily.rodriguez@example.com" class="text-indigo-600 hover:text-indigo-800 text-sm">emily.rodriguez@example.com</a>
+         <h3 class="text-xl font-semibold text-gray-800 mb-2">Dr. Caro Gutierrez Cisneros</h3>
+         <p class="text-purple-600 font-medium mb-2"> Researcher</p><a href="mailto:emily.rodriguez@example.com" class="text-indigo-600 hover:text-indigo-800 text-sm">emily.rodriguez@example.com</a>
         </div>
        </div>
        <div class="team-card">
         <div class="w-full h-64 bg-gradient-to-br from-indigo-500 to-blue-500 flex items-center justify-center"><span class="text-7xl">👨‍💻</span>
         </div>
         <div class="p-6">
-         <h3 class="text-xl font-semibold text-gray-800 mb-2">Dr. Michael Chen</h3>
+         <h3 class="text-xl font-semibold text-gray-800 mb-2">Dr. ....</h3>
          <p class="text-purple-600 font-medium mb-2">Researcher</p><a href="mailto:michael.chen@example.com" class="text-indigo-600 hover:text-indigo-800 text-sm">michael.chen@example.com</a>
         </div>
        </div>
       </div>
-     </div><!-- Visiting Professors Section -->
-     <div class="mb-16">
-      <h2 class="text-3xl font-bold text-white mb-8">Visiting Professors</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-       <div class="team-card">
-        <div class="w-full h-64 bg-gradient-to-br from-purple-400 to-indigo-400 flex items-center justify-center"><span class="text-7xl">👨‍🏫</span>
-        </div>
-        <div class="p-6">
-         <h3 class="text-xl font-semibold text-gray-800 mb-2">Prof. John Anderson</h3>
-         <p class="text-purple-600 font-medium mb-2">Visiting Professor</p><a href="mailto:j.anderson@example.com" class="text-indigo-600 hover:text-indigo-800 text-sm">j.anderson@example.com</a>
-        </div>
-       </div>
-      </div>
-     </div><!-- Visiting Researchers Section -->
+     </div>
+    <!-- Visiting Researchers Section -->
      <div class="mb-16">
       <h2 class="text-3xl font-bold text-white mb-8">Visiting Researchers</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

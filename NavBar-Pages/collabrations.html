@@ -53,7 +53,7 @@
 
             <!-- Overview -->
             <div class="dropdown dropdown-right">
-              <a class="dropdown-item nav-link text-gray-700 hover:text-purple-600">
+              <a href="overview.html" class="dropdown-item nav-link text-gray-700 hover:text-purple-600">
                 Overview ▸
               </a>
 
@@ -142,10 +142,10 @@
       Research ▾
     </button>
     <div class="hidden pl-4">
-      <button class="toggle-btn w-full text-left py-2 text-gray-700 hover:text-purple-600">
+       <button data-href="overview.html" class="toggle-btn w-full text-left py-2 text-gray-700 hover:text-purple-600" id="overview-btn">
         Overview ▸
       </button>
-      <div class="hidden pl-4">
+      <div class="hidden pl-4" id="overview-menu">
         <a href="Electrospinning.html" class="block py-1">
           Electrospinning Polymers for Biomedical Applications
         </a>
@@ -185,34 +185,38 @@
       <h1 class="text-4xl font-bold text-gray-800 mb-8">Collabrations</h1>
       <p class="text-xl text-gray-600 mb-12">Our research is supported through collaborations with prestigious funding agencies and institutions.</p>
      
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12"><!-- FWO Funding -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        
       <!-- ESB Funding -->
-       <div class="bg-gradient-to-br from-indigo-50 to-blue-50 p-8 rounded-xl border-2 border-indigo-200 hover:border-indigo-400 transition hover:shadow-xl">
+       <div class="bg-gradient-to-br from-indigo-50 to-blue-50 p-8 rounded-xl border-2 border-indigo-200 hover:border-indigo-400 transition hover:shadow-xl flex flex-col h-full">
         <div class="flex flex-col items-center mb-6">
-         <div class="w-48 h-48 bg-white rounded-lg p-6 flex items-center justify-center mb-4 shadow-md">
-          <svg viewbox="0 0 120 120" class="w-full h-full"><!-- ESB Logo - DNA helix style --> 
-             <img src="../images/esb.png" alt="esb picture" style="width: 300px; height: auto;">
-          </svg>
-         </div>
+         
+          <!-- ESB Logo - DNA helix style --> 
+             <img src="../images/esb.png" alt="esb picture" class="w-64 h-auto mb-4">
+          
+         <br><br>
          <h3 class="text-2xl font-bold text-gray-800 text-center">ESB</h3>
          <p class="text-gray-600 text-center text-sm mt-2">European Society for Biomaterials</p>
         </div>
         <p class="text-gray-700 text-center mb-4">The European Society for Biomaterials promotes research and development in biomaterials science and technology.</p>
-        <div class="text-center"><a href="https://esbiomaterials.eu/" target="_blank" rel="noopener noreferrer" class="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition">Visit Website →</a>
+        <div class="text-center mt-auto"><a href="https://esbiomaterials.eu/" target="_blank" rel="noopener noreferrer" class="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition">Visit Website →</a>
         </div>
-       </div><!-- YSF Funding -->
-       <div class="bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-xl border-2 border-blue-200 hover:border-blue-400 transition hover:shadow-xl">
+       </div>
+       <!-- YSF Funding -->
+       <div class="bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-xl border-2 border-blue-200 hover:border-blue-400 transition hover:shadow-xl flex flex-col h-full">
         <div class="flex flex-col items-center mb-6">
-         <div class="w-48 h-48 bg-white rounded-lg p-6 flex items-center justify-center mb-4 shadow-md">
-          <svg viewbox="0 0 120 120" class="w-full h-full"><!-- YSF Logo - Star with molecules --> 
-                <img src="../images/ysf.png" alt="ysf picture" style="width: 300px; height: auto;">
-          </svg>
-         </div>
+         
+         <!-- YSF Logo - Star with molecules --> 
+                <img src="../images/ysf.png"
+         alt="ysf picture"
+         class="w-64 h-auto mb-4">
+          
+         
          <h3 class="text-2xl font-bold text-gray-800 text-center">YSF</h3>
          <p class="text-gray-600 text-center text-sm mt-2">Young Scientist Fellowship</p>
         </div>
         <p class="text-gray-700 text-center mb-4">The Young Scientist Fellowship program supports emerging researchers in biomaterials science and engineering.</p>
-        <div class="text-center"><a href="https://esbiomaterials.eu/cms/content/about-ysf" target="_blank" rel="noopener noreferrer" class="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition">Visit Website →</a>
+        <div class="text-center mt-auto"><a href="https://esbiomaterials.eu/cms/content/about-ysf" target="_blank" rel="noopener noreferrer" class="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition">Visit Website →</a>
         </div>
        </div>
       </div>
