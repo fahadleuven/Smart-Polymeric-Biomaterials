@@ -20,6 +20,15 @@
   object-fit: cover;  /* Cover the screen */
   z-index: -1;        /* Send behind content */
 }
+.bg-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* fills screen like a video */
+  z-index: -1;         /* keeps it behind content */
+}
 
 .content {
   position: relative;
