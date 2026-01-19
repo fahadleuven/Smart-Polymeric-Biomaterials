@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Targeted delivery of drugs to the gastro-intestinal tract through stimuli-
+responsive soft polymer robots </title>
+ 
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+  <style>@view-transition { navigation: auto; }</style>
+  
+</head>
+<body>
+<div class="page-wrapper"><!-- Scroll to Top Button -->
+   <div class="scroll-to-top" id="scrollToTop">
+    <svg width="24" height="24" viewbox="0 0 24 24" fill="none"><path d="M12 19V5M5 12L12 5L19 12" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+   </div>
+
+   <img src="/images/background/1.jpg" alt="Background" class="bg-image" />
+
+   <!-- Navigation -->
+    <nav class="nav-container bg-white shadow">
+  <div class="max-w-7xl mx-auto px-6 py-4">
+    <div class="flex items-center justify-between">
+
+      <!-- Logo + Group Name -->
+      <div class="flex items-center space-x-3">
+        <div class="w-20 h-20 bg-white rounded-lg flex items-center justify-center overflow-hidden">
+          <img src="../images/logo/l9.jpg"
+               alt="Group Logo"
+               class="w-full h-full object-contain scale-150" />
+        </div>
+        <span id="nav-group-name" class="text-xl font-bold text-gray-800">
+          Smart Polymeric Biomaterials
+        </span>
+      </div>
+
+      <!-- Desktop Menu -->
+      <div id="desktop-menu" class="hidden md:flex space-x-6 items-center">
+
+        <a href="../index.html" class="nav-link text-purple-600">Home</a>
+
+        <!-- Research -->
+        <div class="dropdown dropdown-down">
+          <a class="nav-link text-gray-700 hover:text-purple-600">
+            Research ▾
+          </a>
+
+          <div class="dropdown-menu">
+
+            <!-- Overview -->
+            <div class="dropdown dropdown-right">
+              <a href="../NavBar-Pages/overview.html" class="dropdown-item nav-link text-gray-700 hover:text-purple-600">
+                Overview ▸
+              </a>
+
+              <div class="dropdown-menu">
+                <a href="../NavBar-Pages/Electrospinning.html" class="dropdown-item">
+                  Electrospinning Polymers for Biomedical Applications
+                </a>
+                <a href="../NavBar-Pages/Developing-Stimuli.html" class="dropdown-item">
+                  Developing Stimuli-Responsive (Nano) particles
+                </a>
+                <a href="../NavBar-Pages/research-2.html" class="dropdown-item">
+                  Research Area 2
+                </a>
+              </div>
+            </div>
+
+            <a href="../NavBar-Pages/lab.html"
+               class="dropdown-item nav-link text-gray-700 hover:text-purple-600">
+              Lab
+            </a>
+
+            <a href="../NavBar-Pages/funding.html"
+               class="dropdown-item nav-link text-gray-700 hover:text-purple-600">
+              Funding
+            </a>
+
+          </div>
+        </div>
+
+        <!-- People -->
+        <div class="dropdown dropdown-down">
+          <a class="nav-link text-gray-700 hover:text-purple-600">
+            People ▾
+          </a>
+
+          <div class="dropdown-menu">
+            <a href="../NavBar-Pages/team.html"
+               class="dropdown-item nav-link text-gray-700 hover:text-purple-600">
+              Team
+            </a>
+
+            <a href="../NavBar-Pages/collabrations.html"
+               class="dropdown-item nav-link text-gray-700 hover:text-purple-600">
+              Collaborations
+            </a>
+          </div>
+        </div>
+
+        <a href="../publication.html" class="nav-link text-gray-700 hover:text-purple-600">
+          Publications
+        </a>
+
+        <a href="../NavBar-Pages/events.html" class="nav-link text-gray-700 hover:text-purple-600">
+          Events
+        </a>
+
+        <a href="../NavBar-Pages/joinUs.html" class="nav-link text-gray-700 hover:text-purple-600">
+          Join Us
+        </a>
+
+        
+
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <button id="menu-btn" class="md:hidden text-gray-800 focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden hidden px-6 pb-4 bg-white">
+
+    <a href="../index.html" class="block py-2 text-purple-600">Home</a>
+
+    <!-- Mobile Research -->
+    <button class="toggle-btn w-full text-left py-2 text-gray-700 hover:text-purple-600">
+      Research ▾
+    </button>
+    <div class="hidden pl-4">
+     <button data-href="../NavBar-Pages/overview.html" class="toggle-btn w-full text-left py-2 text-gray-700 hover:text-purple-600" id="overview-btn">
+        Overview ▸
+      </button>
+      <div class="hidden pl-4" id="overview-menu">
+        <a href="../NavBar-Pages/Electrospinning.html" class="block py-1">
+          Electrospinning Polymers for Biomedical Applications
+        </a>
+        <a href="../NavBar-Pages/Developing-Stimuli.html" class="block py-1">
+          Developing Stimuli-Responsive (Nano) particles
+        </a>
+        <a href="../NavBar-Pages/research-2.html" class="block py-1">
+          Research Area 2
+        </a>
+      </div>
+      <a href="../NavBar-Pages/lab.html" class="block py-1">Lab</a>
+      <a href="../NavBar-Pages/funding.html" class="block py-1">Funding</a>
+    </div>
+
+    <!-- Mobile People -->
+    <button class="toggle-btn w-full text-left py-2 text-gray-700 hover:text-purple-600">
+      People ▾
+    </button>
+    <div class="hidden pl-4">
+      <a href="../NavBar-Pages/team.html" class="block py-1">Team</a>
+      <a href="../NavBar-Pages/collabrations.html" class="block py-1">Collaborations</a>
+    </div>
+
+    <a href="../publication.html" class="block py-2">Publications</a>
+    <a href="../NavBar-Pages/events.html" class="block py-2">Events</a>
+    <a href="../NavBar-Pages/joinUs.html" class="block py-2">Join Us</a>
+   
+  </div>
+</nav>
+
+
+
+    <!-- Colorectal cancer prevention using targeted drug delivery of anti-inflammatory drugs through reactive-oxygen-species responsive soft polymeric robots Page data -->
+  
+  <div class="max-w-7xl mx-auto px-6 py-16">
+
+    <!-- GRID: 2 CARDS -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <!-- ---------------- CARD 1 : TEXT ---------------- -->
+      <div class="bg-white/20 backdrop-blur-lg p-8 rounded-xl shadow-lg border border-white/30 text-left">
+        <h1 class="text-3xl font-bold text-white mb-4">
+         Targeted delivery of drugs to the gastro-intestinal tract through stimuli-
+responsive soft polymer robots</h1>
+
+
+        <p class="text-purple-100 leading-relaxed mb-4">
+         Colorectal cancer (CRC) accounts for approximately 10% of global cancer
+cases, making it the third most common cancer and the second leading cause
+of cancer-related deaths. Inflammatory bowel disease (IBD), a chronic
+condition of the gastrointestinal tract (GI-tract), heightens CRC risk, making
+patients six times more likely to develop colorectal malignancies  . Large
+doses of immunosuppressive and anti-inflammatory medications are used in
+the standard treatment of IBD often using a pH sensitive drug delivery system.
+These systems deal with several shortcomings. In this project we aim to
+overcome these shortcoming by employing a reversible snapping hydrogel as
+a DDS which is inspired by the Venus Flytrap, allowing for the harnessing of
+mechanical instabilities , as shown in Figure 1.
+        </p>
+
+        <p class="text-purple-100 leading-relaxed">
+         This reversible snapping
+hydrogel is made by using a double crosslinking technique that incorporates
+
+both stimuli-sensitive crosslinking as well as permanent crosslinking. By
+harnessing mechanical instabilities induced by dual crosslinking and triggered
+by a specific stimulus (IP protected), our sinnovative approach aims to
+enhance targeted drug delivery for inflammation and work as a preventative
+measure for the development of colorectal cancer, addressing critical
+challenges in therapeutic effectiveness and precision medicine.
+        </p>
+        
+
+
+
+
+
+       <!-- Video button and container -->
+
+
+      </div>
+
+ <!-- CARD 2: Image Slider -->
+<div class="bg-white/20 backdrop-blur-lg p-6 rounded-xl shadow-lg border border-white/30">
+
+  <div class="slideshow-container relative">
+
+    <!-- Slides -->
+   
+<div class="slide fade">
+ 
+ <img src="/images/project/cancer-prevention.png" class="slider-img" /> <div class="caption">Figure 1. Schematic overview of the deformations of different systems <br> that are envisioned, displaying (A) bending of a flat bilayer,<br> (B) rapid inversion of a curved bilayer, and <br>(C) the rapid expulsion of internal fluid of a drug delivery device.</div>
+
+
+</div>
+
+
+   
+
+    
+
+  </div>
+  
+  
+
+  
+<div class="space-y-3 mt-6">
+
+  <!-- Group -->
+  <div class="flex items-start space-x-3">
+    <i class="fa-solid fa-users text-purple-600 text-2xl mt-1"></i>
+
+    <p class="text-lg text-white">
+      <strong>Supervision:</strong> <a href="../Person-Pages/Arn.html" class="hover:text-purple-600 transition"> Promotor Prof. Arn Mignon</a>, co-promotor Prof. Benjamin Gorissen
+    </p>
+  </div>
+
+  <!-- Person (PhD student) -->
+  <div class="flex items-start space-x-6">
+    <i class="fa-solid fa-user text-purple-600 text-xl mt-1"></i>
+
+    <p class="text-lg text-white">
+      <strong>PhD student:</strong>  <a href="../Person-Pages/Britt.html" class="hover:text-purple-600 transition"> Ir. Britt De Munter</a>
+    </p>
+  </div>
+
+</div>
+
+
+<!-- Get in touch Button -->
+<a href="../NavBar-Pages/team.html"
+   class="mt-4 px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition inline-block">
+  Get in touch with the team
+</a>
+
+</div>
+
+
+
+
+
+    </div>
+    </div>
+    </div>
+
+<script src="/js/script.js"></script>
+
+
+   
+
+
+ </body>
+</html>
